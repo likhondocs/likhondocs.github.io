@@ -2,20 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Likhon Sheikh's Personal Website">
+    <meta name="description" content="Likhon Sheikh's personal website. Explore my work and download my resume.">
     <meta name="author" content="Likhon Sheikh">
+    
+    <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Likhon Sheikh - Personal Website">
-    <meta property="og:description" content="Welcome to Likhon Sheikh's personal site, featuring resume and more.">
+    <meta property="og:description" content="Explore my personal projects and view my resume.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://likhondocs.github.io">
-    <meta property="og:image" content="https://example.com/image.png"> <!-- Optional image -->
+    <meta property="og:image" content="https://example.com/profile-picture.png"> <!-- Update with your image URL -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Likhon Sheikh">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Likhon Sheikh - Personal Website">
+    <meta name="twitter:description" content="Explore my projects and download my resume directly.">
+    <meta name="twitter:image" content="https://example.com/profile-picture.png"> <!-- Update with your image URL -->
+    <meta name="twitter:site" content="@YourTwitterHandle"> <!-- Update with your Twitter handle -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+    
+    <!-- Title -->
     <title>Likhon Sheikh - Personal Website</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
+    <!-- CSS Imports -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS for Style -->
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f5;
             margin: 0;
             padding: 0;
         }
@@ -24,17 +49,40 @@
             margin: 50px auto;
             padding: 20px;
             background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         h1 {
             text-align: center;
-            margin-bottom: 20px;
+            font-weight: 600;
+            color: #343a40;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            color: #495057;
         }
         .pdf-viewer {
             width: 100%;
             height: 700px;
             border: none;
+            margin-top: 20px;
+        }
+        .download-link {
+            display: block;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .download-link a {
+            text-decoration: none;
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .download-link a:hover {
+            background-color: #0056b3;
         }
         footer {
             text-align: center;
@@ -42,20 +90,51 @@
             font-size: 14px;
             color: #777;
         }
+        .social-icons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #495057;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
         <h1>Welcome to Likhon Sheikh's Personal Website</h1>
-        <p>Explore my latest work and view my resume directly below.</p>
-        
+        <p>Explore my latest work, view my CV, and connect with me on social platforms.</p>
+
         <!-- Embed PDF directly into the page -->
-        <iframe class="pdf-viewer" src="https://github.com/likhondocs/likhondocs.github.io/raw/main/Likhon_Sheikh.pdf"></iframe>
+        <iframe class="pdf-viewer" src="https://raw.githubusercontent.com/likhondocs/likhondocs.github.io/main/Likhon_Sheikh.pdf"></iframe>
         
-        <p>Or <a href="https://github.com/likhondocs/likhondocs.github.io/blob/main/Likhon_Sheikh.pdf" target="_blank">Download My Resume (PDF)</a></p>
+        <!-- Download Resume Link -->
+        <div class="download-link">
+            <a href="https://raw.githubusercontent.com/likhondocs/likhondocs.github.io/main/Likhon_Sheikh.pdf" target="_blank">Download My Resume (PDF)</a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-icons">
+            <a href="https://twitter.com/YourTwitterHandle" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/likhondocs" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/YourLinkedInProfile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </div>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Likhon Sheikh. All rights reserved.</p>
     </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
 </body>
 </html>
